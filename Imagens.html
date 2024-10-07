@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px; 
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+}
+
+@media (max-width: 480px) {
+    .galeria {
+        grid-gap: 10px;
+    }
+}
+</style>
+<body>
+    <section class="galeria">
+        <img src="img/casa.png" alt="Imagem 1">
+        <img src="img/ceu.png" alt="Imagem 2">
+        <img src="img/Predio.png" alt="Imagem 3">
+        <img src="img/rio-de-janeiro-1963744_1280.png" alt="Imagem 4">
+    </section>
+</body>
+</html>
